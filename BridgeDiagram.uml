@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<uml:Model xmi:version="20110701" xmlns:xmi="http://www.omg.org/spec/XMI/20110701" xmlns:uml="http://www.eclipse.org/uml2/4.0.0/UML" xmi:id="_de2ZUPxpEeatHIZ--LAPOA" name="model">
+  <ownedComment xmi:id="_AMyYAPxqEeatHIZ--LAPOA" annotatedElement="_fIyyoPxpEeatHIZ--LAPOA">
+    <body>Imp->operationImp</body>
+  </ownedComment>
+  <packagedElement xmi:type="uml:Class" xmi:id="_fIyyoPxpEeatHIZ--LAPOA" name="Abstraction">
+    <ownedOperation xmi:id="_o79V0PxpEeatHIZ--LAPOA" name="operation"/>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Class" xmi:id="_g3QfkPxpEeatHIZ--LAPOA" name="Implementor">
+    <ownedOperation xmi:id="_ps5DgPxpEeatHIZ--LAPOA" name="operationImp"/>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Class" xmi:id="_imQ_EPxpEeatHIZ--LAPOA" name="RefinedAbstraction">
+    <generalization xmi:id="_lFrn0PxpEeatHIZ--LAPOA" general="_fIyyoPxpEeatHIZ--LAPOA"/>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Association" xmi:id="_lmWE4_xpEeatHIZ--LAPOA" name="abstraction_implementor_1" memberEnd="_lmWE5PxpEeatHIZ--LAPOA _lmWE4PxpEeatHIZ--LAPOA">
+    <ownedEnd xmi:id="_lmWE5PxpEeatHIZ--LAPOA" name="abstraction" type="_fIyyoPxpEeatHIZ--LAPOA" association="_lmWE4_xpEeatHIZ--LAPOA">
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_lmWE5fxpEeatHIZ--LAPOA" value="1"/>
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_lmWE5vxpEeatHIZ--LAPOA" value="1"/>
+    </ownedEnd>
+    <ownedEnd xmi:id="_lmWE4PxpEeatHIZ--LAPOA" name="implementor" type="_g3QfkPxpEeatHIZ--LAPOA" aggregation="shared" association="_lmWE4_xpEeatHIZ--LAPOA">
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_lmWE4fxpEeatHIZ--LAPOA" value="1"/>
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_lmWE4vxpEeatHIZ--LAPOA" value="1"/>
+    </ownedEnd>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Class" xmi:id="_rjFwIPxpEeatHIZ--LAPOA" name="ConcreteImplementorA">
+    <generalization xmi:id="_va5vMPxpEeatHIZ--LAPOA" general="_g3QfkPxpEeatHIZ--LAPOA"/>
+    <ownedOperation xmi:id="_6g2v8PxpEeatHIZ--LAPOA" name="operationImp"/>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Class" xmi:id="_tY0isPxpEeatHIZ--LAPOA" name="ConcreteImplementorB">
+    <generalization xmi:id="_vvxL8PxpEeatHIZ--LAPOA" general="_g3QfkPxpEeatHIZ--LAPOA"/>
+    <ownedOperation xmi:id="_7ZmV0PxpEeatHIZ--LAPOA" name="operationImp"/>
+  </packagedElement>
+</uml:Model>
